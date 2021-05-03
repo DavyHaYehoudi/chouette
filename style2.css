@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bloc {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bloc-lg {
+    padding: 100px 50px;
+}
+
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:993px){
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        margin-top: 70px;
+        flex-direction: column;
+    }
+}
+
+.navbar-nav {
+    margin-top: 25px;
+}
+
+.nav > li {
+    font-size: 2.3rem; 
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.bg-repeat {
+    background: repeat;
+}
+
+.bg-t-edge {
+    background: top no-repeat;
+}
+
+.b-parallax {
+    background-attachment: fixed;
+}
+
+.voffset-lg {
+    margin: 100px 0;
+}
+
+.btn-rd {
+    border-radius: 40px;
+}
+
+#bloc-2-services .med-width-whitespace {
+    display: flex;
+}
+
+@media screen and (max-width:1024px) {
+    #bloc-2-services .med-width-whitespace {
+        flex-wrap: wrap;
+  }
+}
+
+.med-width-whitespace {
+    margin-top: 50px;
+}
+
+.icon-lg {
+    font-size: 15rem;
+}
+
+@media screen and (max-width:414px) {
+    .icon-lg {
+        font-size: 10rem;
+    }
+}
+/*positionnement de la croix dans les photos*/
+a[data-lightbox] {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+ a[data-lightbox]:hover::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+} 
+
+ a[data-lightbox]:hover img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+} 
+
+/*citation du PDG Maxime*/
+.citation {
+    font-size: 2rem;
+}
+
+.author {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+.btn,a {
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #575757!important;
+}
+
+/*phrases sous les icônes*/
+.text-center1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#bloc-4-portfolio {
+    margin-top: -80px;
+}
+/*phrases sous les photos réalisation*/
+.text-center3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+.white {
+    font-size: 1.7rem;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #363636!important;
+}
+
+.portfolio-thumb {
+    width: 100%;
+}
+
+.cta-hero {
+    margin-top: 22px;
+    color: #FFFFFF!important;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#cta-hero {
+    font-size: 2rem;
+}
+/*icônes média*/
+.social {
+    max-width: 400px;
+    margin: auto;
+    font-size: 5rem;
+}
+
+.h1 {
+    font-size: 3rem;
+    font-family: "Open Sans";
+    color: #333333!important;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.4em;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+    width: 70%;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 2.8rem;
+}
+
+h4 {
+    color: #333333!important;
+}
+
+.icons {
+    margin-bottom: 14px;
+    margin-top: 24px;
+}
+
+/*adresse entreprise footer*/
+
+
+.col-sm-7 {
+    width: 100%;
+}
+
+.form-group, .form-control {
+    font-size: 2.5rem;
+}
+
+.form-group, .btn-atomic-tangerine2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn-atomic-tangerine {
+    font-size: 2.5rem;
+}
+
+.bgc-atomic-tangerine,.btn-atomic-tangerine2 {
+    background-color: #F3976C;
+}
+
+.col-sm-9 {
+    font-size: 2.5rem;
+    margin-top: 50px;   
+    word-wrap: break-word;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width:1024px){
+.form-group, .form-control,.col-sm-9,.btn-atomic-tangerine2{
+    width: 100%;
+   }
+}
+
+/*phrase accroche du footer*/
+.white4 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.col-sm-4 {
+    width: 100%;
+}
+
+.col-sm-4 ul {
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+/*liens partenaires*/
+.col-sm-4 li {
+    margin-right: 70px;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.partenaires {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+.bgc-dark-slate-blue {
+    background-color: #364577;
+}
+
+
+
+.tc-white {
+    color: #fd844c!important;
+    width: 100%;
+}
+
+.tc-white2 {
+    color: #2e160a!important;
+    width: 100%;
+}
+
+.tc-white3 {
+    color: white;
+    font-size: 5rem;
+}
+
+.tight-width-whitespace1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.btn-atomic-tangerine {
+    background: #F3976C;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine:hover {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+
+.ltc-white {
+    color: #FFFFFF!important;
+}
+
+.ltc-white:hover {
+    color: #cccccc!important;
+}
+
+.ltc-atomic-tangerine {
+    color: #F3976C!important;
+}
+
+.ltc-atomic-tangerine:hover {
+    color: #c27956!important;
+}
+
+.icon-dark-slate-blue {
+    color: #364577!important;
+    border-color: #364577!important;
+}
+
+.bg-dots-bg {
+    background-image: url("img/dots-bg.png");
+}
+
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
+}
+
+.bg-banniere {
+    background-image: url("img/la-chouette-agence-banniere.jpg");
+}
+
+.bg-presentation {
+    background-image: url("img/presentation1.jpg");
+}
+
