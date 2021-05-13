@@ -9,18 +9,21 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
+
+	<link rel="preload" href="./css/bootstrap.css" as="style">
+	<link rel="preload" href="./fonts/et-line.woff" as="font" />
+	<link rel="font" href="./fonts/et-line.woff" />
+	
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style2.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" >
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
 
     <title>La chouette agence, concepteur web design sur Lyon</title><!--Titre à la page du site-->
 
@@ -41,7 +44,7 @@
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<!--suppression des deux meta keywords-->
-				<a class="navbar-brand"><img src="img/la-chouette-agence.png" alt="Lyon web design logo entreprise graphique meilleure agence"/></a>
+				<div class="navbar-brand"><img src="img/la-chouette-agence.png" alt="Lyon web design logo entreprise graphique meilleure agence"/></div>
 				<!--localité de Lyon et non celle de Paris + synonymes de mots-clés plutot que redondances-->	
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -247,25 +250,26 @@
 					<div class="form-group">
 						<label>
 							Nom
+							<input id="name" type = "text" class="form-control" required />
 						</label>
-						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
+							<input id="email" class="form-control" type="email" required />
 						</label>
-						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
+							<input class="form-control" type="text" required id="input_504" />
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine2" type="submit">
 						Envoyer
@@ -317,7 +321,7 @@
 					<!--suppression de la meta keywords-->
 				</div>
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4 partner">
 						<p class="partenaires">Partenaires :</p>
 							<ul>
 								<li><a href="voiture.com">voiture.com</a></li>

@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -45,8 +45,12 @@ body {
     font-size: 2.3rem; 
 }
 
+nav li a {
+    color: black;
+}
+
 .navbar-brand img {
-    width: 100%;
+   width: 100%;
 }
 
 .bg-repeat {
@@ -77,6 +81,11 @@ body {
     #bloc-2-services .med-width-whitespace {
         flex-wrap: wrap;
   }
+}
+
+.image-resize-mode {
+    width: 110px;
+    height: 110px;
 }
 
 .med-width-whitespace {
@@ -136,9 +145,8 @@ h1,
 h2,
 h3,
 h4,
-p,
 label,
-.btn,a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -170,7 +178,7 @@ label,
 }
 
 .portfolio-thumb {
-    width: 100%;
+    width: 100%
 }
 
 .cta-hero {
@@ -184,12 +192,14 @@ label,
 
 #cta-hero {
     font-size: 2rem;
+    background-color: #804f3f;
 }
 /*icônes média*/
 .social {
     max-width: 400px;
     margin: auto;
     font-size: 5rem;
+    color: black;
 }
 
 .h1 {
@@ -237,16 +247,22 @@ h4 {
 }
 
 .form-group, .btn-atomic-tangerine2 {
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
+    max-width: 690px;
+    width: 100%;
 }
 
 .btn-atomic-tangerine {
     font-size: 2.5rem;
 }
 
-.bgc-atomic-tangerine,.btn-atomic-tangerine2 {
+.bgc-atomic-tangerine {
     background-color: #F3976C;
+}
+
+.btn-atomic-tangerine2 {
+    background-color: #804f3f;
 }
 
 .col-sm-9 {
@@ -266,10 +282,12 @@ h4 {
 .white4 {
     font-size: 2.5rem;
     margin-top: 20px;
+    color: black;
 }
 
 .col-sm-4 {
     width: 100%;
+    
 }
 
 .col-sm-4 ul {
@@ -281,8 +299,11 @@ h4 {
 .col-sm-4 li {
     margin-right: 70px;
     font-size: 2rem;
-    text-decoration: underline;
     text-align: center;
+}
+
+.col-sm-4 li a {
+    color: black;
 }
 
 .partenaires {
@@ -292,13 +313,16 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
+    color: black;
+}
+
+.partner ul li {
+    padding: 10px;
 }
 
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
-
-
 
 .tc-white {
     color: #fd844c!important;
