@@ -50,7 +50,9 @@ nav li a {
 }
 
 .navbar-brand img {
-   width: 100%;
+   /* width: 100%; */
+   width: 350px;
+   height: 70px;
 }
 
 .bg-repeat {
@@ -166,8 +168,8 @@ label,
 .text-center3 {
     font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 40px;
-    margin-top: -15px;
+    margin: -15px auto 40px auto;
+    max-width: 600px;
 }
 
 
